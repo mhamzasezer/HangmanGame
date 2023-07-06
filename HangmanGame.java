@@ -26,8 +26,7 @@ public class HangmanGame {
             int level = scanner.nextInt();
 
             String wordToGuess = getRandomWord(level); // Get a random word for the chosen level
-            StringBuilder guessedWord = new StringBuilder("_".repeat(wordToGuess.length())); // Initialize guessed word
-                                                                                             // with underscores
+            StringBuilder guessedWord = new StringBuilder("_".repeat(wordToGuess.length())); // Initialize guessed word with underscores
             System.out.println("Guess the word: " + guessedWord);
 
             while (true) {
@@ -37,8 +36,7 @@ public class HangmanGame {
                 if (wordToGuess.indexOf(guess) != -1) { // Correct guess
                     System.out.println("Correct guess!");
 
-                    updateGuessedWord(wordToGuess, guessedWord, guess); // Update the guessed word with the correct
-                                                                        // guess
+                    updateGuessedWord(wordToGuess, guessedWord, guess); // Update the guessed word with the correct guess
                     System.out.println("Word: " + guessedWord);
 
                     if (!guessedWord.toString().contains("_")) { // All letters guessed correctly
@@ -111,8 +109,7 @@ public class HangmanGame {
     private static void updateGuessedWord(String wordToGuess, StringBuilder guessedWord, char guess) {
         for (int i = 0; i < wordToGuess.length(); i++) {
             if (wordToGuess.charAt(i) == guess) {
-                guessedWord.setCharAt(i, guess); // Replace underscore with the correct guess at the corresponding
-                                                 // position
+                guessedWord.setCharAt(i, guess); // Replace underscore with the correct guess at the corresponding position
             }
         }
     }
