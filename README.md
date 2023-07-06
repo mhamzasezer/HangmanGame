@@ -2,7 +2,7 @@
 This is a simple Hangman Game implemented in Java. The game allows you to guess a word to defeat the executioner. You and the executioner start with a maximum of 10 hit points (HP) each. If your HP reaches 0, you lose the game. If the executioner's HP reaches 0, you win.
 
 ## How to Play
-1. Run the program.
+1. Run the program. The code is written in Java and can be compiled and executed using a Java development environment or command-line tools.
 2. The game will display a welcome message and provide a brief description of the game and its rules.
 3. You will be prompted to choose a level from 1 to 5.
 4. Based on your chosen level, a random word will be selected for you to guess.
@@ -40,6 +40,3 @@ The `getRandomWord()` method is responsible for selecting a random word based on
 
 ### Updating the Guessed Word
 The `updateGuessedWord()` method updates the displayed word with the correctly guessed letters. It iterates over each character in the word to guess and replaces the corresponding underscore in the guessed word with the correct guess if a match is found.
-
-## How to play
-The code is written in Java and can be compiled and executed using a Java development environment or command-line tools.
