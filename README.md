@@ -40,3 +40,5 @@ The `getRandomWord()` method is responsible for selecting a random word based on
 
 ### Updating the Guessed Word
 The `updateGuessedWord()` method updates the displayed word with the correctly guessed letters. It iterates over each character in the word to guess and replaces the corresponding underscore in the guessed word with the correct guess if a match is found.
+
+Feel free to modify the code, add more levels and words, or customize the feedback messages according to your needs.
